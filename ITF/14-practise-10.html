@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var adet3=0, adet7=0; adet37=0;
+
+      for(var i=500; i<=1000; i=i+1){
+        if(i%3==0){
+          adet3++; //adet3 = adet3 + 1
+        }  
+        
+        if(i%7==0){
+          adet7++; //adet7 = adet7 + 1
+        }
+
+        if(i%3==0 && i%7==0){
+          adet37++; //adet37 = adet37 + 1
+        }
+
+
+      }
+
+      alert("3 ile tam bölünebilen:" + adet3 + ", 7 ile tam bölünebilen: " + adet7 + ", 3 ve 7 ye tam bölünebilen: " + adet37);
+
+      
+
+    </script>
+  </body>
+</html>

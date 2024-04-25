@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function notCevir(puan){
+        var sonuc = "";
+        if(puan>=90 && puan<=100){
+          sonuc = "A";
+        }
+        else if(puan>=80 && puan<90){
+          sonuc = "B";
+        }
+        else if(puan>=70 && puan<80){
+          sonuc = "C";
+        }
+        else if(puan>=50 && puan<70){
+          sonuc = "D";
+        }
+        else if(puan>=0 && puan<50){
+          sonuc = "F";
+        }
+        return sonuc;
+      }
+
+
+      alert(notCevir(72));
+        
+
+    </script>
+  </body>
+</html>

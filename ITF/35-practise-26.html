@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var sayilar = [23, 56, 12, 76, 23, 545, 231, 55, 23, 11, 3, 68, 7];
+
+      function getAvg(arr) {
+        var total = 0;
+        for (var i = 0; i < arr.length; i++) {
+          total += arr[i];
+        }
+        return total / arr.length;
+      }
+
+      function getCount(arr, avg) {
+        var cnt = 0;
+        for (var i = 0; i < arr.length; i++) {
+          if (arr[i] < avg) {
+            cnt++;
+          }
+        }
+        return cnt;
+      }
+
+      var sayilarAvg = getAvg(sayilar);
+      console.log(sayilarAvg);
+      var sayilarCnt = getCount(sayilar, sayilarAvg);
+
+      console.log(sayilarCnt);
+    </script>
+  </body>
+</html>

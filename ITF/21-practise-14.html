@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+        
+      var toplam = 0;
+      var sayac = 100;
+
+      var seri = "";
+
+      // 100 + 101 + 102 + 103 .... = 2000 
+
+      while(toplam<2000){
+        toplam += sayac; 
+        seri += sayac + ",";
+        sayac++;
+        
+      }
+
+      alert(sayac-100 + "-----" + toplam);
+      console.log(seri);
+
+
+
+    </script>
+  </body>
+</html>

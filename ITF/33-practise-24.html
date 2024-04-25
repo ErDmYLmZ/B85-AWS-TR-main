@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var sayilar = [23, 56, 12, 76, 23, 545, 231, 55, 23, 11, 3, 68, 7];
+      console.log(getMax(sayilar));
+
+      console.log(getMax([3,78,34,11,87,9]));
+
+      function getMax(arr) {
+        var enBuyuk = arr[0];
+
+        for (var i = 1; i < arr.length; i++) {
+          if (enBuyuk < arr[i]) {
+            enBuyuk = arr[i];
+          }
+        }
+
+        return enBuyuk;
+      }
+
+
+    </script>
+  </body>
+</html>

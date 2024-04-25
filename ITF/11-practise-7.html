@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const sayi = prompt("Bir sayı giriniz");
+      const kalan3 = sayi % 2;
+      const kalan5 = sayi % 7;
+
+      if(kalan3 == 0 && kalan5 == 0){
+          alert("Sayı 3 ve 5 e tam bölünüyor");
+      }
+      else if(kalan3 == 0){
+        alert("Sayı 3 e tam bölünüyor");
+      }
+      else if(kalan5 == 0){
+        alert("Sayı 5 e tam bölünüyor");
+      }
+      else{
+        alert("Sayı 3 e ve/veya 5 e tam bölünmüyor");
+      }
+
+      // DRY: Dont repeat yourself
+    </script>
+  </body>
+</html>

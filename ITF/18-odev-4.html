@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+        const tarihSaat = new Date();
+        const saat = tarihSaat.getHours();
+
+        console.log(saat);
+
+        if(saat>=6 && saat<10){
+          alert("Günaydın");
+        }
+        else if(saat>=10 && saat<19){
+          alert("İyi günler");
+        }
+        else if(saat>=19 && saat<21){
+          alert("İyi akşamlar");
+        }
+        else{
+          alert("İyi geceler");
+        }
+
+
+    </script>
+  </body>
+</html>

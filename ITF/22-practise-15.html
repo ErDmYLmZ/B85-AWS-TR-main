@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Math.random() * (max - min) + min
+      // Math.floor : ondalıklı kısmı yok eder
+      // Math.random(): 0 - 1 arasında ondalıklı rasgele bir sayı tutar
+
+      // Örneğin 1-100 arasında bir sayı tutulacaksa max=100, min=1
+      // Math.random() * (100 - 1) + 1
+      // Math.random() * 99 + 1;
+      
+      var rasgeleSayi =  Math.floor(Math.random() * 99 + 1);
+
+      console.log(rasgeleSayi);
+      var tahmin;
+
+      do{
+        tahmin = prompt("Tahmininiz nedir");
+
+        if(tahmin==rasgeleSayi){
+          alert("Bravo bildiniz");
+        }
+        else if(tahmin>rasgeleSayi){
+          alert("Daha küçük bir tahmin giriniz");
+        }
+        else{
+          alert("Daha büyük bir tahmin giriniz");
+        }
+      }
+      while(tahmin != rasgeleSayi)
+
+
+      
+
+
+    </script>
+  </body>
+</html>
